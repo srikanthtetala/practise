@@ -1,25 +1,18 @@
-name: My-CI
+name: MY-CI
 
-on: 
-   push:
-    branches: [ "main" ]
-   pull_request:
-    branches: [ "main" ]
-
-   workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
+on:
+  push:
+   branches: [ "main" ]
+  pull_request:
+   branches: [ "main" ]
+  workflow_dispatch:
+  
+jobs: 
+   build:
+     runs-on: ubuntu-latest
+     
+     steps:
        - uses: actions/checkout@v4
 
-       - name: My-Name
+       - name: My-name
          run: echo Srikanth
-
-       - name: My-Father
-         run: echo Veera
-     
-    
-    
-   
