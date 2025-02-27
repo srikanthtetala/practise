@@ -1,4 +1,2 @@
-#!bin/bash
-cd /app
-
-echo " My name is Srikanth "
+#!/bin/bash
+echo "Custom action says: $1"
