@@ -1,0 +1,12 @@
+name: "My Custom Docker Action"
+description: "A simple action that echoes a message"
+inputs:
+  message:
+    description: "Message to print"
+    required: true
+    default: "Hello from custom action!"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.message }}
