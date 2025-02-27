@@ -1,4 +1,4 @@
 #!bin/bash
 cd /app
 
-mvn validate
+echo " My name is Srikanth "
